@@ -1,0 +1,19 @@
+@import "../../styles/";
+
+.circle-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    transition: background 1s linear;
+}
+
+.circle {
+    position: absolute;
+    inset: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $white-color;
+}
+

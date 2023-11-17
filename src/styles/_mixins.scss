@@ -1,0 +1,24 @@
+@mixin styleBoxShadow {
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+@mixin styleBoxShadowActive {
+    box-shadow: -6px -6px 10px -1px rgba(0, 0, 0, 0.15),
+        6px 6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+@mixin styleStatus {
+    width: 100%;
+    background-color: $bg-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 9px 12px;
+    color: $secondary-text-color;
+    border-radius: $radius-small;
+    box-shadow: 2px 2px 4px $secondary-text-color;
+
+    &:active {
+        box-shadow: 1px 1px 2px $secondary-text-color;
+    }
+}

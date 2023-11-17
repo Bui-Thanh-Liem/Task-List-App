@@ -1,0 +1,17 @@
+@use "./styles" as * ;
+@use "./styles/global.scss";
+@import "./styles/mixins";
+@import "normalize.css";
+
+
+.app-container {
+    height: 100vh;
+    background-color: $bg-color;
+    padding-top: 36px;
+    
+    .app-row {
+        justify-content: center;
+        border-radius: $radius-small;
+        @include styleBoxShadow;
+    }
+}

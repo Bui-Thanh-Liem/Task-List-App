@@ -1,0 +1,52 @@
+@use "../../styles/variable" as *;
+
+.header-container {
+    justify-content: space-center;
+    align-items: center;
+
+    
+    .header-title {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .header-btn {
+        text-align: right;
+    }
+    
+}
+
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    
+    .modal-header-title {
+        font-weight: 800;
+        font-size: 2.4rem;
+    }
+}
+
+.modal-content {
+    margin-top: 24px;
+
+    // .nameTask {
+    // }
+    
+    // .priority {
+    // }
+
+    .priority-title {
+        margin-top: 12px;
+        font-weight: 700;
+        color: $secondary-text-color;
+        font-size: 1.8rem;
+    }
+}
+
+.modal-footer {
+    margin-top: 32px;
+    text-align: right;
+}

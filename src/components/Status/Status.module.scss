@@ -1,0 +1,14 @@
+@import "../../styles/";
+@import "../../styles/mixins";
+
+.status-container {
+    .status {
+        padding: 9px auto;
+        width: 100%;
+        span {
+            @include styleStatus;
+            display: block;
+        }
+    }
+}
+

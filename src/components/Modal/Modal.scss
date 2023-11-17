@@ -1,0 +1,8 @@
+@use "../../styles/" as *;
+
+.modal-container {
+    .modal-content {
+        border-radius: calc($radius-small + 8px);  
+        padding: 34px;
+    }
+}

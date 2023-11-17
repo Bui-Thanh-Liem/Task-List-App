@@ -1,0 +1,18 @@
+@use "../../styles" as *;
+
+.inputGroup-container {
+    margin-bottom: 24px;
+    .inputGroup-label {
+        font-weight: 700;
+        color: $secondary-text-color;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .inputGroup-input {
+        padding: 8px 16px;
+        border-radius: $radius-small;
+        font-size: 1.4rem;
+        box-shadow: none;
+    }
+}

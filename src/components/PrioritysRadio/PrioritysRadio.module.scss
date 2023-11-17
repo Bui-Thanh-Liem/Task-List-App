@@ -1,0 +1,75 @@
+@import "../../styles/";
+
+.prioritysRadio-container {
+    .prioritys {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .label {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: $secondary-text-color;
+        cursor: pointer;
+        padding: 8px 16px;
+    }
+
+    .outLine .label {
+        border-radius: $radius-small;
+        border: 1px solid $secondary-text-color;
+    }
+
+    input {
+        display: none;
+    }
+
+    // Normal
+    input:checked + .high {
+        color: $red-color;
+        text-shadow: 0px 0px 2px currentColor;
+    }
+
+    input:checked + .medium {
+        color: $orange-color;
+        text-shadow: 0px 0px 2px currentColor;
+    }
+
+    input:checked + .low {
+        color: $green-color;
+        text-shadow: 0px 0px 2px currentColor;
+    }
+
+    // OutLine
+    .outLine .high {
+        color: $red-color;
+        border-color: currentColor;
+    }
+
+    .outLine .medium {
+        color: $orange-color;
+        border-color: currentColor;
+    }
+
+    .outLine .low {
+        color: $green-color;
+        border-color: currentColor;
+    }
+
+    .outLine input:checked + .label {
+        color: $white-color;
+        border-color: currentColor;
+    }
+
+    .outLine input:checked + .high {
+        background-color: $red-color;
+    }
+
+    .outLine input:checked + .medium {
+        background-color: $orange-color;
+    }
+
+    .outLine input:checked + .low {
+        background-color: $green-color;
+    }
+}

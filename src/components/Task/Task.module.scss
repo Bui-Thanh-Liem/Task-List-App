@@ -1,0 +1,92 @@
+@import "../../styles/mixins";
+@import "../../styles";
+
+.listTaskItem-comtainer {
+    @include styleBoxShadow;
+    border-radius: $radius-small;
+    background-color: $white-color;
+    padding: 16px 22px;
+
+    & + .listTaskItem-comtainer {
+        margin-top: 12px;
+    }
+
+    .nameTitle {
+        color: $secondary-text-color;
+        font-size: 1.4rem;
+        margin-bottom: 2px;
+    }
+
+    .listTaskItem-row {
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        max-width: 240px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;    
+    }
+
+    .priority {
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+
+    .status-container {
+        width: 105px;
+    }
+
+    .status {
+        span {
+            cursor: pointer;
+            background-color: $bg-color;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $secondary-text-color;
+            padding: 6px 12px;
+            border-radius: $radius-small;
+            box-shadow: 2px 2px 4px $secondary-text-color;
+            transition: all 0.2 linear;
+
+            &:active {
+                box-shadow: 1px 1px 2px $secondary-text-color;
+            }
+        }
+    }
+
+    .progress-container {
+        display: block;
+    }
+
+    .container-btn {
+        text-align: right;
+        
+        
+        .edit-btn,
+        .delete-btn {
+            font-size: 2.4rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .delete-btn {
+            margin-left: 16px;
+            color: $red-color;
+        }
+    }
+}
+
+.High {
+    color: $red-color;
+    text-shadow: 0px 0px 2px currentColor;
+}
+.Medium {
+    color: $orange-color;
+    text-shadow: 0px 0px 2px currentColor;
+}
+.Low {
+    color: $green-color;
+    text-shadow: 0px 0px 2px currentColor;
+}
